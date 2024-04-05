@@ -1,4 +1,4 @@
-## Register n0: 212222110032
+## Register no: 212222110032
 # EX 2b IMPLEMENTATION OF SLIDING WINDOW PROTOCOL
 ## AIM:
 To implent the program for the implementationof sliding window protocol
