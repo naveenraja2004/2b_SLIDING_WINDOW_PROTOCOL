@@ -1,5 +1,6 @@
-## Register no: 212222110032
 # EX 2b IMPLEMENTATION OF SLIDING WINDOW PROTOCOL
+### Register no: 212222110032
+### Name: Prabha C
 ## AIM:
 To implent the program for the implementationof sliding window protocol
 ## ALGORITHM:
