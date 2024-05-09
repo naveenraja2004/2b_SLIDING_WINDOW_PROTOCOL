@@ -1,8 +1,11 @@
-# EX 2b IMPLEMENTATION OF SLIDING WINDOW PROTOCOL
-### Register no: 212222110032
-### Name: Prabha C
-## AIM:
-To implent the program for the implementationof sliding window protocol
+## NAME: NAVEEN RAJA N R
+## REGISTER NUMBER: 212222230093
+
+# 2b IMPLEMENTATION OF SLIDING WINDOW PROTOCOL
+
+## AIM
+To write a python program to perform sliding window protocol.
+
 ## ALGORITHM:
 1. Start the program.
 2. Get the frame size from the user
@@ -10,9 +13,10 @@ To implent the program for the implementationof sliding window protocol
 4. To send frames to server from the client side.
 5. If your frames reach the server it will send ACK signal to client
 6. Stop the Program
+   
 ## PROGRAM
-## Client Program:
-```
+## CLIENT
+~~~
 import socket
 s=socket.socket()
 s.bind(('localhost',8000))
@@ -24,27 +28,29 @@ s=int(input("Enter Window Size : "))
 st=0
 i=0
 while True:
-   while(i<len(l)):
-    st+=s
-    c.send(str(l[i:st]).encode())
-    ack=c.recv(1024).decode()
-    if ack:
-       print(ack)
-       i+=s
-
-```
-## Server Program:
-```
+ while(i<len(l)):
+     st+=s
+     c.send(str(l[i:st]).encode())
+     ack=c.recv(1024).decode()
+     if ack:
+        print(ack)
+        i+=s
+~~~
+## SERVER
+~~~
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
 while True: 
-    print(s.recv(1024).decode())
-    s.send("acknowledgement recived from the server".encode())
-
-```
+ print(s.recv(1024).decode())
+ s.send("acknowledgement recived from the server".encode())
+~~~
 ## OUPUT
-![Screenshot 2024-02-16 114242](https://github.com/22008837/2b_SLIDING_WINDOW_PROTOCOL/assets/120194155/c17b89e0-ed9b-4f9c-9ccf-1d14c7d862a7)
+## CLIENT
+![sliding client](https://github.com/23006111/2b_SLIDING_WINDOW_PROTOCOL/assets/145981696/93aa5309-ac9d-4835-b354-55c97180b3ec)
+## SERVER
+![sliding server](https://github.com/23006111/2b_SLIDING_WINDOW_PROTOCOL/assets/145981696/89470514-e548-4e8a-9546-f147412c1ea3)
+
 
 ## RESULT
 Thus, python program to perform stop and wait protocol was successfully executed
